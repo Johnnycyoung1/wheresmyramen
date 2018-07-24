@@ -1,0 +1,6 @@
+framework module Pods_wheresmyramen {
+  umbrella header "Pods-wheresmyramen-umbrella.h"
+
+  export *
+  module * { export * }
+}

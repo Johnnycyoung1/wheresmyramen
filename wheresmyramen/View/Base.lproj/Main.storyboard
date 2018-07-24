@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcomescreen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomescreenViewController" customModule="wheresmyramen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peter-hershey-209469-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="0UU-j4-Sj7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-36.5" translatesAutoresizingMaskIntoConstraints="NO" id="tN1-Mr-w2B">
+                                <rect key="frame" x="55" y="145" width="265.5" height="119.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHERE'S MY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPP-z3-zdC">
+                                        <rect key="frame" x="0.0" y="0.0" width="265.5" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="42"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RAMEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAD-yD-pia">
+                                        <rect key="frame" x="0.0" y="21" width="265.5" height="98.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="72"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2f-dM-o8V" customClass="CustomButton" customModule="wheresmyramen" customModuleProvider="target">
+                                <rect key="frame" x="55" y="507" width="265.5" height="60"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.086274509799999996" blue="0.1019607843" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                <state key="normal" title="FIND">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0UU-j4-Sj7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="07Y-MS-aSc"/>
+                            <constraint firstItem="tN1-Mr-w2B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="BPF-UY-ysi"/>
+                            <constraint firstItem="tN1-Mr-w2B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="Gjs-C1-Not"/>
+                            <constraint firstItem="0UU-j4-Sj7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="J13-6r-eOr"/>
+                            <constraint firstItem="0UU-j4-Sj7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N79-0u-UbX"/>
+                            <constraint firstItem="tN1-Mr-w2B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VCD-if-dQH"/>
+                            <constraint firstItem="e2f-dM-o8V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXo-6t-bW9"/>
+                            <constraint firstItem="e2f-dM-o8V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="XTQ-tm-sVm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tN1-Mr-w2B" secondAttribute="trailing" constant="54.5" id="aRA-xd-yKV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e2f-dM-o8V" secondAttribute="bottom" constant="100" id="cSH-K3-du1"/>
+                            <constraint firstItem="0UU-j4-Sj7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hFs-kt-bKi"/>
+                            <constraint firstItem="e2f-dM-o8V" firstAttribute="width" secondItem="tN1-Mr-w2B" secondAttribute="width" id="rc6-2D-dsI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e2f-dM-o8V" secondAttribute="trailing" constant="54.5" id="v71-t1-rRc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="peter-hershey-209469-unsplash" width="3700" height="2466"/>
+    </resources>
+</document>
